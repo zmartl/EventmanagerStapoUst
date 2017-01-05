@@ -35,7 +35,7 @@ namespace EventmanagerStapoUst.Controllers
 
         public IEnumerable<EventInformation> Get()
         {
-            return _events;
+            return _events.OrderBy(x => x.StartDateTime);
         }
 
         public IHttpActionResult Get(int id)

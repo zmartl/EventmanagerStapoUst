@@ -1,0 +1,22 @@
+﻿.header {
+    border-bottom: 1px solid #E62A24;
+    height: 100px;
+}
+
+.logo {
+    float: left;
+    max-height: 100px;
+    padding: 10px;
+}
+
+.title-section {
+    padding: 10px 0;
+}
+
+.link-section {
+    padding: 42px 0;
+}
+
+.background-usterRed {
+    color: #E62A24;
+}
