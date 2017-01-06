@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Event App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="Content/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container-fluid header">
+    <div class="col-md-3">
+        <img src="images/stadtuster.png" alt="logo" class="img-responsive logo"/>
+    </div>
+    <div class="col-md-6 text-center title-section">
+        <h1>Verwaltungspolizei</h1>
+    </div>
+    <div class="col-md-3 link-section">
+
+    </div>
+</div>
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                <a href="#">
+                    Eventmanager
+                </a>
+            </li>
+            <li>
+                <a href="index.html"><i class="fa fa-bars" aria-hidden="true"></i>&nbsp;&nbsp;Dashboard</a>
+                <a href="category.html"><i class="fa fa-th" aria-hidden="true"></i> &nbsp;&nbsp; Kategorien</a>
+            </li>
+        </ul>
+    </div>
+    <!-- /#sidebar-wrapper -->
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Detail</h1>
+                    <br/>  
+                    <div class="form">
+                        <div class="form-group row">
+                            <label for="eventName" class="col-xs-2 col-form-label">Name</label>
+                            <div class="col-xs-10">
+                                <input class="form-control" type="text" id="eventName">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="eventLocation" class="col-xs-2 col-form-label">Ort</label>
+                            <div class="col-xs-10">
+                                <input class="form-control" type="text" id="eventLocation">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="eventCategory" class="col-xs-2 col-form-label">Kategorie</label>
+                            <div class="col-xs-10">
+                                <input class="form-control" type="text" id="eventCategory">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="eventStartTime" class="col-xs-2 col-form-label">Von</label>
+                            <div class="col-xs-10">
+                                <input class="form-control" type="datetime-local" id="eventStartTime">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="eventEndTime" class="col-xs-2 col-form-label">Bis</label>
+                            <div class="col-xs-10">
+                                <input class="form-control" type="datetime-local" id="eventEndTime">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="eventPermission" class="col-xs-2 col-form-label">Genehmigung auswählen</label>
+                            <div class="col-xs-10">
+                                <input class="form-control" type="file" id="eventPermission">
+                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+</div>
+<script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.js"></script>
+<script src="Scripts/jquery-3.1.1.min.js"></script>
+<script src="Scripts/moment.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="js/core.js"></script>
+<script src="js/detail.js"></script>
+
+
+</body>
+</html>

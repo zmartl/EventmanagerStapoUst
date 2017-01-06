@@ -11,13 +11,19 @@ namespace EventmanagerStapoUst.Controllers
     [RoutePrefix("api/events")]
     public class EventController : ApiController
     {
-        private readonly EventInformation[] _events = new EventInformation[]
+        private static Category cat1 = new Category
         {
+            Id = 1,
+            Name = "Informationsanlass"
+        };
+        private readonly EventInformation[] _events = new EventInformation[]
+        {            
             new EventInformation
             {
                 Id = 1,
                 EventName = "Uschter Fäscht",
                 EventLocation = "Uster, Stadtzentrum",
+                Category = cat1,
                 StartDateTime = DateTime.Now,
                 EndDateTime = DateTime.Now.AddDays(5),
                 Permission = "test"
@@ -27,6 +33,7 @@ namespace EventmanagerStapoUst.Controllers
                 Id = 2,
                 EventName = "Geburtstagsparty Rico",
                 EventLocation = "Uster, Landihalle",
+                Category = cat1,
                 StartDateTime = DateTime.Now,
                 EndDateTime = DateTime.Now.AddDays(5),
                 Permission = "test"

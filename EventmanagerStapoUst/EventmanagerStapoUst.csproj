@@ -93,9 +93,15 @@
   <ItemGroup>
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="detail.html" />
+    <Content Include="category.html" />
+    <Content Include="js\category.js" />
+    <Content Include="js\core.js" />
+    <Content Include="js\detail.js" />
     <Content Include="styles\app.css" />
-    <Content Include="js\app.js" />
+    <Content Include="js\index.js" />
     <Content Include="Global.asax" />
     <Content Include="images\stadtuster.png" />
     <Content Include="index.html" />
@@ -118,10 +124,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\EventController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\EventInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
